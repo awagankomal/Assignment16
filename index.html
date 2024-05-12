@@ -3,47 +3,119 @@
     <head>
         <title>Cafe Deja Vu </title>
         <style>
-            body{
+            body{ 
                margin: 0px;
                padding: 0px;
-               background-image: linear-gradient(rgb(rgb(216, 209, 209))),rgba(241, 231, 231,0.5),url(Images/coffee_bg_Image.jpg)
+               background: url("Images/coffee_bg_Image.jpg");
+            }
+           .chatbox{
+                position: fixed;
+                bottom: 20px;
+                margin-left: 92%;
+                margin-bottom: 0px;
             }
             .navbar{
-                background-color: rgba(216, 209, 209,0.4);
+                background-color: rgba(240, 236, 236, 0.959);
+                border: none;
+                position: sticky;
+                top: 2px;
+             }
+            .container{
+                
+                background-color: #2e373d;
+                padding:25px;
+                left:30px;
+                width:90%;
+                margin-left: 30px;
+
             }
-            .container2{
-                background-color: #0F81C7;
+            .imgset{
+               
+                left:100px;
+                padding: 30px;
             }
+            
+
+          
+            button{
+                position:relative;
+                padding:10px;
+                border-radius: 15px;
+                background-color: rgba(228, 221, 221, 0.884);
+                border:none;
+                box-shadow: 2px 2px 5px 4px rgb(221, 205, 205);
+                margin-right: 5px;
+                margin-top: 1px;
+                margin-bottom: 3px;
+            }
+            button:hover{
+                background-color:#e9862f;
+            }
+            h1{
+                
+                color: #612f04;
+                font-style: normal;
+                font-family:'Times New Roman', Times, serif;
+                margin-left: 34%;
+                font-size: 60px;
+            }
+            .tagline{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-style: italic;
+                text-align: center;
+                margin-left: 39%;
+                font-size: 20px;
+             }
+             .btn{
+                background-color: rgb(5, 5, 77);
+                color: white;
+                border:none;
+                position:static;
+                margin:5px;
+                padding:10px;
+                font-size: medium;
+             }
+             .formstyle{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+             }
+
         </style>
     </head>
-    <body background="Images/coffee_bg_Image.jpg" >
+    <body>
         <div class="navbar">
-            <img src="Images/logo.png" alt="cafe logo" height="50px" width="50px"/>
+            <img src="Images/logo.png" alt="cafe logo" height="40px" width="40px" style="margin-right: 30%;"/>
             <button>Cafe Deja VU</button>
             <button>Menu</button>
             <button>Party Booking</button>
             <button>Franchaise</button>
-            <button>Menu</button>
+            <button>Contact Us</button>
             <a href="#">
-                <img src="Images/interface.png" alt="UserImage" height="50px"/>
-                Login</a>
-            <a href="#">
-                <img src="Images/messenger.png" alt="chatLogo" height="30px" />
-            </a>
+                <img src="Images/interface.png" alt="UserImage" height="30px" style="margin-left: 190px;margin-top: 2px;"/>
+                <span style="font-size: larger;">Login</span></a>
+                
             
         </div>
         <div>
-            <img src="Images/logo.png" alt="cafe logo" height="90px" width="90px"/>
+            <br/>
+            <img src="Images/logo.png" alt="cafe logo" height="120px" width="120px" style="margin-left: 44%; margin-top: 2%;"/>
             <h1>Cafe Deja VU</h1>
-            <span>GOOD Vibes Only!!<br/>
-                Crafting Unforgettable Moments, One Sip at a Time!<br/>
-                Get-together Cuisine🥘<br/>
-            </span>
-            <p>
-                Founded in 2017, Cafe Deja Vu is known for revolutionising the way people Order, Eat and Enjoy food. We take pride in our ability to discover the most unique flavours from around the world and share them with the Pune and Mumbai area. Join us.
+            <br/>
+            <span class="tagline">GOOD Vibes Only!! </span><br/><br/>
+            <span class="tagline" style="margin-left: 28%;">Crafting Unforgettable Moments, One Sip at a Time! </span><br/><br/>
+            <span class="tagline"> Get-together Cuisine🥘 </span><br/>
+           
+            <p style="text-align: justify; margin-left: 12%;">
+                Founded in 2017, Cafe Deja Vu is known for revolutionising the way people Order, Eat and Enjoy food. We take pride in our ability to discover<br/> the most unique flavours from around the world and share them with the Pune and Mumbai area. Join us.
             </p>
         </div>
-        <div class="container">
+        <a href="#" class="chatbox">
+            <img src="Images/messenger.png" alt="chatLogo" height="70px" />
+        </a>
+        <br/><br/>
+        <div class="container imgset" >
+
               <img src="Images/cafe_inside_look.jpg" alt="cafe_inside_look Image"  height="300px" width="550px"/>
               <img src="Images/cafe_front_door.jpg" alt="cafe_front_door Image" height="300px" width="550px"/>
               <img src="Images/cafe_inside2.jpg" alt="cafe_inside area Image" height="300px" width="550px" />
@@ -51,18 +123,19 @@
               <img src="Images/cafe_sitting_area.jpg" alt="cafe_seating_area Image" height="300px" width="550px"/>
               <img src="Images/gardening_area.jpg" alt="Garden Image" height="300px" width="550px"/>    
         </div>
-
+        <br/>
         <div>
+           
             <h1>Reservation</h1>
-            <form>
-              <label for="location">Location</label>
-              <select id="location" required>
+            <form class="formstyle">
+              <label for="location" style="margin-left: 70px;">Location</label>
+              <select id="location" style="margin-left: 5px;" required>
                 <option>NDA Pashan Road</option>
                 <option>Shivaji Co-operative Hall</option>
                 <option>Katraj-Dehu Road</option>
               </select>
-              <label for="partysize">Party Size</label>
-              <select id="partysize" required>
+              <label for="partysize" style="margin-left: 40px;">Party Size</label>
+              <select id="partysize" style="margin-left: 5px;"required>
                 <option>1 guest</option>
                 <option>2 guests</option>
                 <option>3 guests</option>
@@ -70,17 +143,14 @@
                 <option>5 guests</option>
                 <option>6 guests</option>
               </select>
-              <label for="date">Date</label>
-              <input type="date" id="date" required/>
-              <label for="time">Time</label>
-              <input type="datetime" id="time" required/>
+              <label for="date" style="margin-left: 40px;">Date</label>
+              <input type="date" id="date" style="margin-left: 5px;" required/>
+              <label for="time" style="margin-left: 40px;">Time</label>
+              <input type="datetime" id="time" style="margin-left: 5px;" required/>
               <button class="btn">Reserve</button>
             </form>
         </div>
-        <div class="container2">
-
-            
-        </div>
+       <br/><br/><br/>
 
 
     </body>
